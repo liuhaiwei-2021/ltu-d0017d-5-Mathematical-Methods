@@ -14,7 +14,6 @@
 */
 
 import java.util.Scanner;
-import java.util.Arrays;
 
 public class Main {
 
@@ -30,7 +29,6 @@ public class Main {
     double coneVolume = 0.0;
     int numerator = 0;
     int denominator = 0;
-
 
     System.out.println("Assignment 5!");
     userInput = new Scanner(System.in);
@@ -77,7 +75,7 @@ public class Main {
     }
     
     userInput.close();
-  }// cloe of main function
+  }// close of main function
  
    /**
    * input() to validate user input
@@ -110,7 +108,7 @@ public class Main {
    * @return the area of the circle
    */
   public static double area(int radius) {
-    int EXPONENT_AREA = 2;
+    final int EXPONENT_AREA = 2;
     return Math.PI * Math.pow(radius, EXPONENT_AREA);
   }
 
@@ -139,8 +137,8 @@ public class Main {
    */
   public static double volume(int radius, int height) {
     // declare all constants
-    int EXPONENT_VOLUME = 2;  
-    int DENOM_VOLUME = 3; 
+    final int EXPONENT_VOLUME = 2;  
+    final int DENOM_VOLUME = 3; 
     
     return Math.PI * Math.pow(radius, EXPONENT_VOLUME) * height / DENOM_VOLUME;  
   }// close of volume
